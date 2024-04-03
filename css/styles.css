@@ -1,0 +1,23 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.form{
+    margin: auto;
+    padding: 50px;
+    width: 80vh;
+    background: rgb(204, 204, 204);
+}
+.input{
+    background-color: white;
+    border: 1px black solid;
+    border-radius: 5px;
+    padding: 10px;
+}
+.cont{
+    margin: 20px auto;
+}
+label{
+    display: block;
+    width: 200px;
+}
