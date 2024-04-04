@@ -7,6 +7,7 @@
     padding: 50px;
     width: 80vh;
     background: rgb(204, 204, 204);
+    border-radius: 5px;
 }
 .input{
     background-color: white;
@@ -16,8 +17,23 @@
 }
 .cont{
     margin: 20px auto;
+    padding: 20px auto;
 }
+
 label{
     display: block;
     width: 200px;
+}
+.btn_form:hover{background-color: rgb(216, 216, 216);}
+.btn_login:hover{background-color: rgb(61, 61, 61);}
+
+img{
+    opacity: 0.5;
+    width: 400px;
+    height: 400px;
+    transition: width 2s,opacity 2s;
+}
+img:hover{
+    width: 600px;
+    opacity: 1;
 }
