@@ -11,6 +11,7 @@ function funcion1(){
     document.getElementById("demo").innerHTML=text;
     document.getElementById("numero").innerHTML=x;
 }
+
 function validacion(){
     var nombre = document.getElementById("nombre").value;
     var apellido = document.getElementById("apellido").value;
@@ -25,6 +26,7 @@ function validacion(){
 
     if(document.getElementById("")){}
 }
+
 /*function validacion()
 {
     var  nombre = document.getElementById("nombre").value;
@@ -33,22 +35,8 @@ function validacion(){
 }
 
 
-
-<!DOCTYPE html>
-<html>
-<head>
-    <script src="scripts.js"></script>
-</head>
-
-
-<body>
-
-
 <h2>Ejemplo de form en html</h2>
-
-
 <p>Formulario de ingreso</p>
-
 
 <form name="miform" onsubmit="return validate()">
 <label for="nombre">Nombre: </label><br>
@@ -85,6 +73,4 @@ function validacion(){
 
 </form>
 
-
-</body>
-</html>*/
+*/

@@ -5,27 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/yampat1/css/styles.css">
+    <script src="/yampat1/js/form.js"></script>
 </head>
 <body>
     <h1>Ejemplo de formulario</h1>
     <form action="" class="form">
         <h2>Formulario de registro</h2>
         <div class="cont">
-            <label for="">Nombre</label>
-            <input type="text">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre">
         </div>
         <div class="cont">
             <label for="">Email</label>
-            <input type="email" name="" id="">
+            <input type="email" name="" id="email">
         </div>
+
+        <!-- <div class="cont">
+            <label for="fecha">Fecha de nacimiento</label>
+            <input type="date" name="fecha" id="fecha">
+        </div> -->
 
         <div class="cont">
             <label for="">Contraseña</label>
-            <input type="password">
+            <input type="password" id="password">
         </div>
+        <div class="cont">
+            <label for="">Repetir Contraseña</label>
+            <input type="password" id="rep_password">
+        </div>
+
         <div>
-            <input type="submit" value="Enviar" class="input">
+            <button type="button" onclick="validaciones()">Enviar</button>
         </div>
+    </form>
+    <form action="/yampat1/clases/clase4/formulario.html">
+        <input type="submit" value="formulario">
     </form>
 </body>
 </html>
