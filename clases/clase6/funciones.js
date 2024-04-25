@@ -10,10 +10,12 @@ function insertar_registro()
     $(document).on("click",'btn_registrar',function()
                     {
                         var user = $('#Nombre').val();
+                        var apellido = $('#Apellido').val();
                         var email = $('#Email').val();
+                        var fechaNacimiento = $('#FechaNacimiento').val();
 
                         //Validación front
-                        if(user==""||email=="")
+                        if(user==""||email==""||apellido==""||fechaNacimiento=="")
                         {
                             $('message').html('Tiene campos vacíos');
                         }
