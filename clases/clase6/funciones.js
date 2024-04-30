@@ -1,3 +1,4 @@
+// Vimos ajax con jquery
 $(document).ready(function()
     {
         insertar_registro();
