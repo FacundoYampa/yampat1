@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.1
+-- version 5.1.1
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 30-04-2024 a las 04:50:13
--- Versión del servidor: 11.3.0-MariaDB
--- Versión de PHP: 8.0.28
+-- Tiempo de generación: 09-05-2024 a las 00:37:08
+-- Versión del servidor: 10.4.22-MariaDB
+-- Versión de PHP: 8.1.2
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -24,27 +24,39 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `usuarios`
+-- Estructura de tabla para la tabla `email`
 --
 
-CREATE TABLE `usuarios` (
+CREATE TABLE `email` (
+  `id` int(11) NOT NULL,
+  `valor` text COLLATE utf8_spanish_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `fecha`
+--
+
+CREATE TABLE `fecha` (
   `id` int(5) NOT NULL,
-  `nombre` text NOT NULL,
-  `apellido` text NOT NULL,
-  `email` text NOT NULL,
-  `fecha_nacimiento` date NOT NULL,
-  `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
-  `deleted_at` timestamp NOT NULL DEFAULT current_timestamp()
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_spanish_ci;
+  `valor` varchar(50) COLLATE utf8_spanish_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
 
 --
 -- Índices para tablas volcadas
 --
 
 --
--- Indices de la tabla `usuarios`
+-- Indices de la tabla `email`
 --
-ALTER TABLE `usuarios`
+ALTER TABLE `email`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indices de la tabla `fecha`
+--
+ALTER TABLE `fecha`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -52,9 +64,15 @@ ALTER TABLE `usuarios`
 --
 
 --
--- AUTO_INCREMENT de la tabla `usuarios`
+-- AUTO_INCREMENT de la tabla `email`
 --
-ALTER TABLE `usuarios`
+ALTER TABLE `email`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT de la tabla `fecha`
+--
+ALTER TABLE `fecha`
   MODIFY `id` int(5) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
