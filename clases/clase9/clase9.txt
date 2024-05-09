@@ -1,0 +1,39 @@
+Clase 9/5:
+
+Pobramos Selenium ide con nuestro formulario.
+Exportamos los comandos creados en un archivo python. (lo guardamos en el repositorio)
+    Vimos que contiene ese archivo: 
+    conceptos de POO como clases e instancias,
+    tmb métodos de py,
+    la identación en py define bloques de codigo.
+    importaciones necesarias:
+        pip install pytest
+        pip install selenium
+        pip install urllib3==1.26.6 (version de selenium compatible)
+    
+    recomendación: no recuerdo como pero hay que setearle un tiempo de ejecución.
+Despues de todo eso corrimos archivo py.
+
+--------------------------------------------------------------------------------------
+
+Abrimos Xampp para inicar el servidor apache y mysql    (localhost)
+En phpmyadmin creamos una base de datos con dos tablas:
+    fecha: id | valor
+    email: id | valor
+        A esas tablas le dimos valores (errores, pero no llegamos a verlo después)
+exportamos la bd para tenerla en el repositorio (supongo que para tenerla a mano para la proxima)
+
+Después el profe nos pasó un archivo de python: dbhelper.py (está en el classroom)
+donde se conecta a la base de datos y realiza una consulta sql.
+Para poder probar ese archivo necesitamos instalar depenencias:
+    pip install mysql
+    pip install mysql.connector
+Vimos conceptos como: __init__
+                     mysq.connect (método para conectar bd)
+                     cursor ("herramienta" que te permite ejecutar consultas SQL)
+                     commit (traer los datos)
+                     .execute(Ejecutar Consultas SQL)
+                     .fetchall(método para obtener todos los datos) 
+                     for in  (recorrer la tabla) 
+
+Al correr el programa pudimos ver los datos de la tabla por la consola.

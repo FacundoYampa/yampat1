@@ -23,10 +23,10 @@ class DatabaseHelper():
 				f.write("\n ")
 
 	def __init__(self):
-		self.server = "192.168.0.234" #186.18.178.206
-		self.database = "moneda"
+		self.server = "localhost" #186.18.178.206
+		self.database = "testing"
 		self.username = "root"
-		self.password = "retsam77"
+		self.password = ""
 	
 
 		if self.password is None:
