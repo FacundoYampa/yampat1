@@ -1,0 +1,10 @@
+Clase 8 - virtual martes 7/5 :
+
+Trello - Jira:
+    Administradores de proyectos
+    Ejemplo basico:
+        Tareas - En proceso - Hecho
+Scrum:
+    Marco de trabajo - metodología ágil
+
+    Gant
