@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 09-05-2024 a las 00:37:08
+-- Tiempo de generación: 09-05-2024 a las 02:10:25
 -- Versión del servidor: 10.4.22-MariaDB
 -- Versión de PHP: 8.1.2
 
@@ -32,6 +32,14 @@ CREATE TABLE `email` (
   `valor` text COLLATE utf8_spanish_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
 
+--
+-- Volcado de datos para la tabla `email`
+--
+
+INSERT INTO `email` (`id`, `valor`) VALUES
+(1, 'error_email1'),
+(2, 'error_email2');
+
 -- --------------------------------------------------------
 
 --
@@ -42,6 +50,14 @@ CREATE TABLE `fecha` (
   `id` int(5) NOT NULL,
   `valor` varchar(50) COLLATE utf8_spanish_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+
+--
+-- Volcado de datos para la tabla `fecha`
+--
+
+INSERT INTO `fecha` (`id`, `valor`) VALUES
+(1, 'fecha_error1'),
+(2, 'fecha_error2');
 
 --
 -- Índices para tablas volcadas
@@ -67,13 +83,13 @@ ALTER TABLE `fecha`
 -- AUTO_INCREMENT de la tabla `email`
 --
 ALTER TABLE `email`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT de la tabla `fecha`
 --
 ALTER TABLE `fecha`
-  MODIFY `id` int(5) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

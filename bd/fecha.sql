@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 09-05-2024 a las 00:41:46
+-- Tiempo de generación: 09-05-2024 a las 02:00:59
 -- Versión del servidor: 10.4.22-MariaDB
 -- Versión de PHP: 8.1.2
 
@@ -33,6 +33,14 @@ CREATE TABLE `fecha` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
 
 --
+-- Volcado de datos para la tabla `fecha`
+--
+
+INSERT INTO `fecha` (`id`, `valor`) VALUES
+(1, 'fecha_error1'),
+(2, 'fecha_error2');
+
+--
 -- Índices para tablas volcadas
 --
 
@@ -50,7 +58,7 @@ ALTER TABLE `fecha`
 -- AUTO_INCREMENT de la tabla `fecha`
 --
 ALTER TABLE `fecha`
-  MODIFY `id` int(5) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

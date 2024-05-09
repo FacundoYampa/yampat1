@@ -10,14 +10,16 @@ from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 
+# En POO las clases son "estructuras" que necesitan ser "instanciadas"
 class TestPrueba1():
+# Método que abre chrome
   def setup_method(self, method):
     self.driver = webdriver.Chrome()
     self.vars = {}
-  
+# método para cerrar el programa (seleniun)
   def teardown_method(self, method):
     self.driver.quit()
-  
+# método con los comandos  
   def test_prueba1(self):
     self.driver.get("http://localhost/yampat1/html/form_registro.html")
     self.driver.set_window_size(1050, 700)
@@ -33,3 +35,7 @@ class TestPrueba1():
     self.driver.find_element(By.ID, "RepPassword").send_keys("asd123")
     self.driver.find_element(By.ID, "btn_registrar").click()
   
+# despues se los instancia:
+scrap = TestPrueba1()
+scrap.setup_method()
+scrap.test_prueba1()
