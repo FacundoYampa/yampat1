@@ -14,6 +14,32 @@ Exportamos los comandos creados en un archivo python. (lo guardamos en el reposi
     recomendación: no recuerdo como pero hay que setearle un tiempo de ejecución.
 Despues de todo eso corrimos archivo py.
 
+ayuda de mi amigo chatgpt:
+import time
+from selenium import webdriver
+
+class TestPrueba1():
+    # Método que abre Chrome
+    def setup_method(self):
+        self.driver = webdriver.Chrome()
+        self.vars = {}
+
+    # Método para cerrar el programa (Selenium)
+    def teardown_method(self):
+        self.driver.quit()
+
+# Instanciar la clase y llamar a los métodos setup y teardown según sea necesario
+prueba = TestPrueba1()
+prueba.setup_method()
+
+# Aquí va el código de prueba...
+
+# Introducir una pausa de 5 segundos
+time.sleep(5)
+
+# Después de terminar las pruebas, llamar al método teardown
+prueba.teardown_method()
+
 --------------------------------------------------------------------------------------
 
 Abrimos Xampp para inicar el servidor apache y mysql    (localhost)

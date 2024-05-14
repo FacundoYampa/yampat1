@@ -1,6 +1,6 @@
 <?php
 
-$con = mysqli_connect('localhost' ,'root', '', 'formulario_usuario');
+$con = mysqli_connect('localhost' ,'root', '', 'bd_php');
 
 if(!$con)
 

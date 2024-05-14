@@ -13,27 +13,34 @@ from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 # En POO las clases son "estructuras" que necesitan ser "instanciadas"
 class TestPrueba1():
 # Método que abre chrome
-  def setup_method(self, method):
+  def setup_method(self):
     self.driver = webdriver.Chrome()
     self.vars = {}
+    # self.driver.implicitly_wait(10)
 # método para cerrar el programa (seleniun)
-  def teardown_method(self, method):
+  def teardown_method(self):
     self.driver.quit()
 # método con los comandos  
   def test_prueba1(self):
     self.driver.get("http://localhost/yampat1/html/form_registro.html")
     self.driver.set_window_size(1050, 700)
     self.driver.find_element(By.ID, "Nombre").click()
+    time.sleep(2)
     self.driver.find_element(By.ID, "Nombre").send_keys("facu")
     self.driver.find_element(By.ID, "Apellido").send_keys("yampa")
+    time.sleep(2)
     self.driver.find_element(By.ID, "FechaNacimiento").send_keys("0002-05-05")
     self.driver.find_element(By.ID, "FechaNacimiento").send_keys("0022-05-05")
     self.driver.find_element(By.ID, "FechaNacimiento").send_keys("0220-05-05")
     self.driver.find_element(By.ID, "FechaNacimiento").send_keys("2204-05-05")
+    time.sleep(2)
     self.driver.find_element(By.ID, "Email").send_keys("facundo@gmail.com")
+    time.sleep(2)
     self.driver.find_element(By.ID, "Password").send_keys("asd123")
     self.driver.find_element(By.ID, "RepPassword").send_keys("asd123")
     self.driver.find_element(By.ID, "btn_registrar").click()
+    #esperar 5s
+    time.sleep(5)
   
 # despues se los instancia:
 scrap = TestPrueba1()

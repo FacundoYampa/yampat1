@@ -23,18 +23,21 @@ $(document).ready(function()
                         }
                         else
                         {
-                            $.ajax
-                            (
-                                {
-                                    url:'insertar.php',
-                                    method:'post',
-                                    data:{Uname:user,Uemail:email},
-                                    success:function(data){
-                                        $('#message').html(data);
-                                        // console.log("entro");
-                                    }
-                                }
-                            )
+                            // event.preventDefault();
+                            console.log("entro");
+                            // $.ajax
+                            // (
+                            //     {
+                            //         url:'insertar.php',
+                            //         method:'post',
+                            //         data:{Uname:user,Uemail:email},
+                            //         success:function(data){
+                            //             alert(data);
+                            //             // $('#message').html(data);
+                                        
+                            //         }
+                            //     }
+                            // )
                         }
                     }
                   )    
