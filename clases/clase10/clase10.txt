@@ -1,0 +1,8 @@
+Clase 10 - Martes 14/5 - Virtual
+Documentación:
+    Template básico (Excel)
+    Buenas practicas (docs)
+
+Ejemplos de casos de prueba:
+    Calculadora
+    Login google
