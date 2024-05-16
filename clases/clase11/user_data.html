@@ -10,18 +10,23 @@
 </head>
 <body class="bg-dark">
 
-    <form style="width: 500px;" class="bg-light container mx-auto my-5 p-5 border rounded">
+    <form style="width: 600px;" class="bg-light container mx-auto my-5 p-5 border rounded">
         <h1 class="mb-5">Datos Personales</h1>
 
         <div class="mb-3">
             <label for="Nombre" class="form-label">Nombre</label>
-            <input type="text" class="form-control" id="Nombre" placeholder="Nombre">
+            <input type="text" class="form-control" id="Nombre" placeholder="Nombre" required>
         </div>
 
         <div class="mb-3">
             <label for="Apellido" class="form-label">Apellido</label>
             <input type="text" class="form-control" id="Apellido" placeholder="Apellido">
         </div>
+
+        <!-- <div class="mb-3">
+            <label for="Edadx" class="form-label">Edad</label>
+            <input type="text" class="form-control" id="Edadx" placeholder="Edad">
+        </div> -->
 
         <div class="mb-3">
             <label for="Direccion" class="form-label">Dirección</label>
@@ -35,7 +40,7 @@
         <div class="mb-3">
             <label for="Direccion" class="form-label">Teléfono</label>
             <div class="input-group">
-                <span class="input-group-text px-3">Fijo</span>
+                <span class="input-group-text">Fijo</span>
                 <input type="text" class="form-control" id="NumFijo" placeholder="Cod. Area">
                 <input type="text" class="form-control" id="NumFijo" placeholder="Número">
             </div>
@@ -59,7 +64,7 @@
 
         <div class="mb-3">
             <label for="FechaNacimiento" class="form-label">Fecha de Nacimiento</label>
-            <input type="date" class="form-control" id="FechaNacimiento" >
+            <input type="date" class="form-control" id="FechaNacimiento" value="2024-01-01" min="2024-01-01" max="2024-01-30">
         </div>
 
         <div class="mb-3">

@@ -8,11 +8,12 @@ $(document).ready(function()
     
     $(document).on("click",'#btn_registrar',function() //Evento click
                     {
-                        var user = $('#Nombre').val();
+                        // var user = $('#Nombre').val();
                         var email = $('#Email').val();
 
+                        var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;//regex para email en una variable
                         //Validación front
-                        if(user==""||email=="")
+                        if(!emailRegex.test(email))//metodo para validar la expresion regular
                         {
                             // $('message').html('Tiene campos vacíos');
                             event.preventDefault();

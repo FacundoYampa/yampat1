@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Validación</title>
+</head>
+<body>
+    <form id="myForm">
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+        <label for="phone">Teléfono:</label>
+        <input type="text" id="phone" name="phone" required>
+        <br><br>
+        <input type="submit" value="Enviar">
+    </form>
+
+    <script>
+        document.getElementById("myForm").addEventListener("submit", function(event) {
+            var email = document.getElementById("email").value;
+            var phone = document.getElementById("phone").value;
+
+            // Expresión regular para validar el correo electrónico
+            var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+            // Expresión regular para validar el número de teléfono (formato: 123-456-7890)
+            var phoneRegex = /^\d{3}-\d{3}-\d{4}$/;
+
+            if (!emailRegex.test(email)) {
+                alert("Por favor, introduce un correo electrónico válido.");
+                event.preventDefault(); // Evita que el formulario se envíe
+                return false;
+            }
+
+            if (!phoneRegex.test(phone)) {
+                alert("Por favor, introduce un número de teléfono válido (formato: 123-456-7890).");
+                event.preventDefault(); // Evita que el formulario se envíe
+                return false;
+            }
+
+            // Si todos los campos son válidos, el formulario se enviará normalmente
+        });
+    </script>
+</body>
+</html>
