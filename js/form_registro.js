@@ -4,6 +4,7 @@ $(document).ready(function()
 
 // function insertar_registro()
 // {
+    //comentario
     
     $(document).on("click",'#btn_registrar',function() //Evento click
                     {
