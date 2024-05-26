@@ -1,0 +1,13 @@
+Clase 12 23/5 Presencial.
+
+Testing de Apis:
+    Postman 
+    Json
+    Apikeys
+    Api Rest
+
+gitignore
+
+Practica: 
+    Documentar Casos de prueba tp.
+    
